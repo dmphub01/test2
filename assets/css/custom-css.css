@@ -1,0 +1,55 @@
+
+/*  Custom CSS Code  */
+
+.flight-details .modal-dialog {margin-top:140px;}
+
+	a {text-decoration:none;}
+	a:hover, a:focus, a:active {color:#F7941D !important; text-decoration:none;}
+	
+.flight-details .modal-header { background-color:#F7941D;}
+.close {opacity:0.8;color:#fff;}
+.flight-details .modal-header h3 { font-weight:bold; text-align:center; color:#fff;}
+
+.flight-details .input-group {border:2px solid #F7941D; color:#F7941D;background:transparent;}
+.flight-details .input-group-addon {background:transparent; border:none; color:#F7941D;}
+.flight-details input{ border:none;}
+
+.btn-primary {background-color:#F7941D !important; color:#fff; font-weight:700; border:none; margin-bottom:10px;}
+.btn-primary:hover {background-color:#fff !important; color:#F7941D !important; border:2px solid #F7941D;}
+
+.form-group a {color:#F7941D; font-size:17px; text-decoration:none; font-weight:500;margin-top:5px;}
+.form-group a:hover {color:#F7941D !important;}
+
+.flight-details2 .modal-dialog {margin-top:40px;}
+
+	a {text-decoration:none;}
+	a:hover, a:focus, a:active {color:#fff !important; text-decoration:none;}
+	
+.flight-details2 .modal-header { background-color:#F7941D;}
+.close {opacity:0.8;color:#fff;}
+.flight-details2 .modal-header h3 { font-weight:bold; text-align:center; color:#fff;}
+
+.flight-details2 .input-group {border:2px solid #e5e5e5; color:#F7941D;background:transparent;}
+.flight-details2 .input-group-addon {background:transparent; border:none; color:#F7941D;}
+.flight-details2 input{ border:none;}
+
+
+.signin {border:2px solid #fff; border-radius:10px; background:transparent;padding:7px; color:#fff; margin-right:10px;margin-left:30px; margin-top:7px;}
+.signup {border:2px solid #fff; border-radius:10px; background:transparent;padding:7px; color:#fff; margin-right:10px; margin-top:7px;}
+
+.user-logged {margin-top:15px;}
+
+.register {background:transparent; color:#F7941D; border:none;}
+
+
+
+@media (max-width: 767px) {
+	.search-section {margin-top:300px !important;}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.search-section {margin-top:280px !important;}
+}
+
+
+.forms { background-color:#fff; padding:50px 10px;overflow:hidden;}

@@ -1,0 +1,301 @@
+<div class="row full-width-search" style="padding:145px 0px !important;">
+		<div class="container clear-padding">
+			<div class="col-md-8 search-section tran-search-box">
+				<div role="tabpanel">
+					<!-- BEGIN: CATEGORY TAB -->
+					<ul class="nav nav-tabs search-top" role="tablist" id="searchTab">
+						<li role="presentation" class="active text-center">
+							<a href="#email-address" aria-controls="flight" role="tab" data-toggle="tab">
+								<i class="fa fa-envelope"></i> 
+								<span>EMAIL</SPAN>
+							</a>
+						</li>
+						<li role="presentation" class="text-center">
+							<a href="#postal-address" aria-controls="hotel" role="tab" data-toggle="tab">
+								<i class="fa fa-location-arrow"></i> 
+								<span>POSTAL</span>
+							</a>
+						</li>
+						<li role="presentation" class="text-center">
+							<a href="#phone-number" aria-controls="holiday" role="tab" data-toggle="tab">
+								<i class="fa fa-phone"></i>
+								<span>PHONE</span>
+							</a>
+						</li>
+						
+					</ul>
+					<!-- END: CATEGORY TAB -->
+
+					<!-- BEGIN: TAB PANELS -->
+					<div class="tab-content">
+							<!-- BEGIN: FLIGHT SEARCH -->
+							<div role="tabpanel" class="tab-pane active" id="email-address">
+								<div ng-controller="emailctrl">
+									<div class="col-md-12 product-search-title">Email Verification</div>
+									<div class="col-md-6 col-sm-6 search-col-padding">
+										<div class="input-group">
+											<input type="email" ng-model="email" class="form-control" name="email" placeholder="rayestevez@gmail.com">
+											<span class="input-group-addon"><i class="fa fa-at fa-fw"></i></span>
+										</div>
+										{{email}}
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12 search-col-padding">
+										<button type="submit" ng-click="verify()" class="search-button btn transition-effect">Verify</button>
+									</div>
+									<div class="clearfix"></div>
+									<ul style="display:none">
+  
+</ul>
+								</div>	
+							</div>
+							<!-- END: FLIGHT SEARCH -->
+							
+							<!-- START: HOTEL SEARCH -->
+							<div role="tabpanel" class="tab-pane" id="postal-address">
+								<form >
+									<div class="col-md-12 product-search-title">Postal Address Verification</div>
+									<div class="col-md-12 search-col-padding">
+										<div class="input-group">
+											<input type="text" name="postal-address" class="form-control" required placeholder="E.g. New York">
+											<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12 search-col-padding">
+										<button type="submit" class="search-button btn transition-effect">Verify</button>
+									</div>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+							<!-- END: HOTEL SEARCH -->
+								
+							<!-- START: BEGIN HOLIDAY -->
+							<div role="tabpanel" class="tab-pane" id="phone-number">
+								<div ng-controller="phnecntrl" >
+									<div class="col-md-12 product-search-title">Phone Verification</div>
+									<div class="col-md-6 col-sm-6 search-col-padding">
+										<div class="input-group">
+											<input type="phone" name="phone" ng-model="phone" class="form-control" required placeholder="+910123456789">
+											<span class="input-group-addon"><i class="fa fa-mobile fa-fw"></i></span>
+										</div>
+									</div>
+									<div class="col-md-12 search-col-padding">
+										<button type="submit" ng-click="verify()" class="search-button btn transition-effect">Verify</button>
+									</div>
+									<div id="phoneDetails" class="clearfix">{{phone}}</div>
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						<!-- END: TAB PANE -->
+				</div>
+			</div>
+			<div class="offer-slider" id="offer-slider-toggle">
+				<div class="owl-carousel col-md-4 text-right" id="offer1">
+					<div class="item">
+						<h3>Verify and Clean your data in 3 easy steps</h3>
+						<a href="#">KNOW MORE</a>
+					</div>
+					<div class="item">
+						<h3>Verify and Clean your data in 3 easy steps</h3>
+						<a href="#">KNOW MORE</a>
+					</div>
+					<div class="item">
+						<h3>Verify and Clean your data in 3 easy steps</h3>
+						<a href="#">KNOW MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END: SEARCH SECTION -->
+
+<!-- BEGIN: HOW IT WORK -->
+<section id="how-it-work">
+		<div class="row work-row">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>WHAT WE DO?</h2>
+					<div class="space"></div>
+					<p>
+						Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					</p>
+				</div>
+				<div class="work-step">
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-envelope"></i>
+						<h5>Email Verification & Hygiene</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-home"></i>
+						<h5>Postal Address Verification & Hygiene</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-phone"></i>
+						<h5>Phone Verification</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				<div class="work-step">
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-line-chart"></i>
+						<h5>List Quality Analysis</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-files-o"></i>
+						<h5>Data De-Duplication</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<i class="fa fa-plus"></i>
+						<h5>Data Enhancement</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+</section>
+<!--END: HOW IT WORK -->
+
+
+<!-- BEGIN: Pricing Section -->
+<section id="home-top-destination">
+	<div class="row image-background">
+		<div class="td-overlay">
+			<div class="container">
+				<div class="light-section-title text-center">
+					<h2>PRICING</h2>
+					<h5>Subscribe</h5>
+					<div class="space"></div>
+					<p>
+						Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					</p>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12">
+				 <div id="pricing-table" class="clear  wow slideInUp">
+    <div class="plan">
+        <h3>Free For Life<span>$0</span></h3>
+        <a class="signup" href="">Sign up</a>         
+        <ul>
+            <li>Verify upto 250 emails</li>
+            <li>Verify upto 250 postals</li>
+            <li>Verify upto 250 phones</li>
+		<li class="disabled">Suppresion</li>
+		<li class="disabled">N.C.O.A</li>
+		<li class="disabled">Deceased</li>
+		<li>List Analysis (limit 1)</li>
+		<li class="disabled">Data Enhance</li>
+		<li class="disabled">API Tools</li>
+		<li>1GB Storage</li>		
+        </ul> 
+    </div>
+    <div class="plan" id="most-popular">
+        <h3>Small Business<span>$99/mo</span></h3>
+        <a class="signup" href="">Sign up</a>        
+        <ul>
+            <li>Verify upto 5000 Emails</li>
+            <li>Verify upto 5000 Postals</li>
+            <li>Verify upto 5000 Phones</li>
+	    <li>Parse & Verify upto 5000 names</li>
+<li>Suppresion</li>
+<li>Quarterly N.C.O.A (5000)</li>
+<li>Quarterly Deceased</li>
+<li>List Analysis</li>
+<li>Data Enhance</li>
+<li>API Tools</li>
+<li>2GB Storage</li>	    
+        </ul>    
+    </div>
+    <div class="plan">
+        <h3>Mid Market Best Value<span>$249/mo</span></h3>
+		<a class="signup" href="">Sign up</a>
+        <ul>
+            <li>Verify upto 100,000 Emails</li>
+            <li>Verify upto 100,000 Postal</li>
+            <li>Verify upto 100,000 Phones</li>
+			<li>Parse & Verify 100,000 names</li>
+<li>Suppresion</li>
+<li>Quarterly N.C.O.A (50,000)</li>
+<li>Quarterly Deceased (50,000)</li>
+<li>List Analysis</li>
+<li>Data Enhance (50,000)</li>
+<li>API Tools</li>
+<li>10GB Storage</li>			
+        </ul>
+    </div>
+    <div class="plan">
+        <h3>Enterprise<span>$999/mo</span></h3>
+        <a class="signup" href="">Sign up</a>		
+        <ul>
+            <li>Verify upto 500,000 Emails</li>
+            <li>Verify upto 500,000 Postal</li>
+            <li>Verify upto 500,000 Phones</li>
+			<li>Parse & Verify 500,000 names</li>
+<li>Suppresion</li>
+<li>Quarterly N.C.O.A (250,000)</li>
+<li>Quarterly Deceased (250,000)</li>
+<li>List Analysis (Unlimited)</li>
+<li>Data Enhance (50,000)</li>
+<li>API Tools</li>
+<li>25GB Storage</li>			
+        </ul>
+    </div> 	
+</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: TOP DESTINATION SECTION -->
+
+<!-- END: RECENT BLOG POST -->
+
+<!-- START: WHY CHOOSE US SECTION -->
+<section id="why-choose-us">
+	<div class="row choose-us-row">
+		<div class="container clear-padding">
+			<div class="light-section-title text-center">
+				<h2>WHY CHOOSE US?</h2>
+				<h4>REASONS TO TRUST US</h4>
+				<div class="space"></div>
+				<p>
+					Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4 wow slideInLeft">
+				<div class="choose-us-item text-center">
+					<div class="choose-icon"><i class="fa fa-filter"></i></div>
+					<h4>Unique Features</h4>
+					<p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#">KNOW MORE</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow slideInUp">
+				<div class="choose-us-item text-center">
+					<div class="choose-icon"><i class="fa fa-phone"></i></div>
+					<h4>Dedicated Support</h4>
+					<p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#">KNOW MORE</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow slideInRight">
+				<div class="choose-us-item text-center">
+					<div class="choose-icon"><i class="fa fa-smile-o"></i></div>
+					<h4>Lowest Price</h4>
+					<p>Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#">KNOW MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: WHY CHOOSE US SECTION -->
